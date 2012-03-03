@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2177" systemVersion="11D50b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="uwW-Kq-7Dk">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1173"/>
+    </dependencies>
+    <scenes>
+        <!--Bibli Paris First View Controller - First-->
+        <scene sceneID="11">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+                <viewController title="First" id="2" customClass="BibliParisFirstViewController" sceneMemberID="viewController">
+                    <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="16">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="26A-kM-ckA" userLabel="sous view">
+                                <rect key="frame" x="0.0" y="36" width="320" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <webView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" scalesPageToFit="YES" id="35d-zI-7hm" userLabel="Infos">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="375"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <dataDetectorType key="dataDetectorTypes"/>
+                                    </webView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Informations générales" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="DOq-cl-Gqg">
+                                <rect key="frame" x="20" y="7" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Infos" image="id-card.png" id="7"/>
+                    <connections>
+                        <outlet property="infosWebView" destination="35d-zI-7hm" id="48X-YX-Yp4"/>
+                        <outlet property="sousview" destination="26A-kM-ckA" id="9vS-lQ-xOP"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="653" y="-138"/>
+        </scene>
+        <!--Bibli Paris Second View Controller - Second-->
+        <scene sceneID="13">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
+                <viewController title="Second" id="3" customClass="BibliParisSecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="XPJ-6n-DFu" userLabel="sous view">
+                                <rect key="frame" x="0.0" y="36" width="320" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <webView opaque="NO" contentMode="scaleAspectFit" scalesPageToFit="YES" id="cg2-16-gFW" userLabel="Prets">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="385"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <dataDetectorType key="dataDetectorTypes"/>
+                                    </webView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Prêts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="UQk-CB-YyM">
+                                <rect key="frame" x="20" y="7" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Prêts" image="book.png" id="6"/>
+                    <connections>
+                        <outlet property="pretsWebView" destination="cg2-16-gFW" id="5Zh-DE-DRH"/>
+                        <outlet property="sousview" destination="XPJ-6n-DFu" id="Awz-Wl-kBT"/>
+                        <outlet property="tabbaritem" destination="6" id="wML-r0-lGq"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="653" y="498"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="15">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
+                <tabBarController id="4" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
+                        <segue destination="3" kind="relationship" relationship="viewControllers" id="27"/>
+                        <segue destination="pot-jx-MN4" kind="relationship" relationship="viewControllers" id="jrV-jH-4oE"/>
+                        <segue destination="uwW-Kq-7Dk" kind="modal" identifier="backtologin" modalTransitionStyle="flipHorizontal" id="da4-tx-Urk"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="138" y="212"/>
+        </scene>
+        <!--Bibli Paris Third View Controller - Third-->
+        <scene sceneID="ONL-0a-TPL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xap-Qt-Kbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController title="Third" id="pot-jx-MN4" customClass="BibliParisThirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YvT-d2-H4m">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="WmY-aa-yWN" userLabel="sous view">
+                                <rect key="frame" x="0.0" y="36" width="320" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <webView opaque="NO" contentMode="scaleAspectFit" scalesPageToFit="YES" id="Ci5-ce-1Cs" userLabel="Reservations">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="385"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <dataDetectorType key="dataDetectorTypes"/>
+                                    </webView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Réservations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1zA-gH-AzS">
+                                <rect key="frame" x="20" y="7" width="174" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Réservations" image="shoppingcart.png" id="ws8-Up-01h"/>
+                    <connections>
+                        <outlet property="reservationsWebView" destination="Ci5-ce-1Cs" id="sHL-gn-VBC"/>
+                        <outlet property="sousview" destination="WmY-aa-yWN" id="LR3-mu-2nj"/>
+                        <outlet property="tabbaritem" destination="ws8-Up-01h" id="L9p-Op-eLT"/>
+                        <outlet property="view" destination="YvT-d2-H4m" id="Coo-qV-XX8"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1116" y="245"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="LjO-h5-0Oe">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="akf-L9-8mK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="uwW-Kq-7Dk" userLabel="Login" customClass="BibliParisLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uZp-kh-Tlv">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="F3e-DI-FOa" userLabel="idView">
+                                <rect key="frame" x="9" y="41" width="301" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Identifiant" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="iDq-Yt-HND">
+                                        <rect key="frame" x="15" y="20" width="86" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Mot de passe" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kb0-cT-4Ba">
+                                        <rect key="frame" x="15" y="85" width="86" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="2jZ-DP-HtY" userLabel="identifiant">
+                                        <rect key="frame" x="112" y="15" width="178" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="uwW-Kq-7Dk" id="fzB-FS-gEE"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Q3B-te-MTn" userLabel="motdepasse">
+                                        <rect key="frame" x="112" y="80" width="97" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="uwW-Kq-7Dk" id="D4O-PS-y6P"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Votre numéro de carte à 14 chiffres" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="2aq-ZV-6EB">
+                                        <rect key="frame" x="116" y="43" width="178" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Votre date de naissance au format JJMMAAAA" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" id="6Jg-Lc-awJ">
+                                        <rect key="frame" x="116" y="108" width="113" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="XAE-pO-D6b" userLabel="OptionsView">
+                                <rect key="frame" x="9" y="229" width="301" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="HRg-Rd-Ad2" userLabel="saveMyID">
+                                        <rect key="frame" x="8" y="20" width="79" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="switchValueChanged" destination="uwW-Kq-7Dk" eventType="valueChanged" id="3FW-a8-vhI"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Se souvenir de mes identifiants" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="lMz-Cr-SEt">
+                                        <rect key="frame" x="97" y="25" width="198" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="agn-hb-7g3">
+                                <rect key="frame" x="45" y="403" width="231" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.13333334028720856" blue="0.56470590829849243" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Connexion">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="connexionAction:" destination="uwW-Kq-7Dk" eventType="touchUpInside" id="jBV-tI-Zyw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="FXK-yB-hhx"/>
+                    <connections>
+                        <outlet property="connexionButton" destination="agn-hb-7g3" id="lJP-3u-lGA"/>
+                        <outlet property="idSwitch" destination="HRg-Rd-Ad2" id="FPD-Lb-axP"/>
+                        <outlet property="idText" destination="2jZ-DP-HtY" id="Tr8-Am-iMu"/>
+                        <outlet property="idView" destination="F3e-DI-FOa" id="vLC-dd-fKk"/>
+                        <outlet property="mdpText" destination="Q3B-te-MTn" id="yHt-mq-0Ke"/>
+                        <outlet property="optionsView" destination="XAE-pO-D6b" id="td2-SS-BfX"/>
+                        <outlet property="view" destination="uZp-kh-Tlv" id="aHG-1w-vBp"/>
+                        <segue destination="4" kind="modal" identifier="donneeschargeessegue" modalTransitionStyle="flipHorizontal" id="ocI-vy-JCJ"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-352" y="173"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.png" width="18" height="26"/>
+        <image name="id-card.png" width="24" height="17"/>
+        <image name="shoppingcart.png" width="26" height="26"/>
+    </resources>
+    <classes>
+        <class className="BibliParisFirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BibliParisFirstViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="infosWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="sousview" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="BibliParisLoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BibliParisLoginViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="connexionAction:"/>
+                <relationship kind="outlet" name="connexionButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="idSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="idText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="idView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="mdpText" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="optionsView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="BibliParisSecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BibliParisSecondViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="pretsWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="sousview" candidateClass="UIView"/>
+                <relationship kind="outlet" name="tabbaritem" candidateClass="UITabBarItem"/>
+            </relationships>
+        </class>
+        <class className="BibliParisThirdViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BibliParisThirdViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="reservationsWebView" candidateClass="UIWebView"/>
+                <relationship kind="outlet" name="sousview" candidateClass="UIView"/>
+                <relationship kind="outlet" name="tabbaritem" candidateClass="UITabBarItem"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
