@@ -257,11 +257,17 @@
                                     <action selector="connexionAction:" destination="uwW-Kq-7Dk" eventType="touchUpInside" id="jBV-tI-Zyw"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="whiteLarge" id="64l-6T-iOj">
+                                <rect key="frame" x="142" y="328" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="FXK-yB-hhx"/>
                     <connections>
+                        <outlet property="activityindicator" destination="64l-6T-iOj" id="f7X-Wu-uMy"/>
                         <outlet property="connexionButton" destination="agn-hb-7g3" id="lJP-3u-lGA"/>
                         <outlet property="idSwitch" destination="HRg-Rd-Ad2" id="FPD-Lb-axP"/>
                         <outlet property="idText" destination="2jZ-DP-HtY" id="Tr8-Am-iMu"/>
@@ -293,6 +299,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BibliParisLoginViewController.h"/>
             <relationships>
                 <relationship kind="action" name="connexionAction:"/>
+                <relationship kind="outlet" name="activityindicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="connexionButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="idSwitch" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="idText" candidateClass="UITextField"/>

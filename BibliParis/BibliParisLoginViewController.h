@@ -18,6 +18,7 @@
     IBOutlet UITextField *mdpText;
     IBOutlet UISwitch *idSwitch;
     IBOutlet UIButton *connexionButton;
+    IBOutlet UIActivityIndicatorView *activityindicator;
 
 }
 
@@ -28,6 +29,7 @@
 @property (nonatomic, retain) UITextField *mdpText;
 @property (nonatomic, retain) UISwitch *idSwitch;
 @property (nonatomic, retain) UIButton *connexionButton;
+@property (nonatomic, retain) UIActivityIndicatorView *activityindicator;
 
 - (IBAction)connexionAction:(id)sender;
 

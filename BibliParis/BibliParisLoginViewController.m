@@ -24,11 +24,14 @@
 @synthesize mdpText;
 @synthesize idSwitch;
 @synthesize connexionButton;
+@synthesize activityindicator;
 
 - (void)viewDidLoad
 {
     NSLog(@"viewDidLoad Login View\n");
     [super viewDidLoad];
+    
+    [activityindicator setHidden:TRUE];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(donneeschargees:) name:@"donneeschargees" object:nil];
     
@@ -149,6 +152,9 @@
 - (IBAction)connexionAction:(id)sender;
 {
     NSLog(@"connexionAction");
+    
+    [activityindicator setHidden:FALSE];
+    [activityindicator startAnimating];
     
     BOOL mdpvalid=TRUE;
     BOOL idvalid=TRUE;

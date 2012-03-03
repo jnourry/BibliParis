@@ -132,6 +132,10 @@ BOOL loginOK=FALSE;
     NSLog(@"requestFinished");
     NSLog(@"responseStatusCode : %i",request.responseStatusCode);
     
+    BibliParisLoginViewController *loginView = (BibliParisLoginViewController *)self.window.rootViewController;
+    [loginView.activityindicator stopAnimating];
+    [loginView.activityindicator setHidden:TRUE];
+
     if (request.responseStatusCode == 200)
     {
         if(!loginOK)
@@ -298,6 +302,18 @@ BOOL loginOK=FALSE;
     NSError *error = [request error];
     NSLog(@"requestFailed");
     NSLog(@"error : %@",error);
+    
+    BibliParisLoginViewController *loginView = (BibliParisLoginViewController *)self.window.rootViewController;
+    [loginView.activityindicator stopAnimating];
+    [loginView.activityindicator setHidden:TRUE];
+    
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"La requête a échoué"
+                          message:@"Problème d'accès aux données sur le site des bibliothèques de prêt de Paris"
+                          delegate:self 
+                          cancelButtonTitle:@"OK"
+                          otherButtonTitles:nil];   
+    [alert show];
 }
 
 - (NSString *)removeHyperlinks:(NSString *)string {
